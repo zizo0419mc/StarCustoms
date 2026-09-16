@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core — Terms of Service</title>
+  <meta name="description" content="Terms of Service for Core, a Discord moderation and anti-nuke bot.">
+  <style>
+    :root{
+      --bg:#070a12;
+      --panel:#0d1220;
+      --panel2:#101729;
+      --text:#f4f7ff;
+      --muted:#9aa6bd;
+      --blue:#3b82f6;
+      --blue2:#60a5fa;
+      --line:rgba(255,255,255,.09);
+      --max:1050px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 50% -10%,rgba(37,99,235,.22),transparent 35%),
+        var(--bg);
+      line-height:1.7;
+    }
+    a{color:var(--blue2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .nav{
+      position:sticky;top:0;z-index:10;
+      backdrop-filter:blur(18px);
+      background:rgba(7,10,18,.78);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{
+      max-width:var(--max);margin:auto;padding:16px 22px;
+      display:flex;align-items:center;justify-content:space-between;gap:20px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
+    .brand-icon{
+      width:38px;height:38px;border-radius:12px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg,#2563eb,#38bdf8);
+      box-shadow:0 0 28px rgba(59,130,246,.35);
+      font-weight:900;
+    }
+    .nav-links{display:flex;gap:20px;font-size:14px}
+    .nav-links a{color:#c7d2e7}
+    .hero{max-width:var(--max);margin:auto;padding:95px 22px 60px}
+    .eyebrow{
+      display:inline-flex;padding:7px 12px;border:1px solid rgba(96,165,250,.25);
+      border-radius:999px;background:rgba(59,130,246,.08);color:#93c5fd;
+      font-size:13px;font-weight:700;
+    }
+    h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:20px 0 18px;letter-spacing:-3px}
+    .hero p{max-width:720px;color:var(--muted);font-size:18px}
+    .updated{font-size:13px;color:#748099;margin-top:22px}
+    .layout{
+      max-width:var(--max);margin:auto;padding:0 22px 90px;
+      display:grid;grid-template-columns:220px 1fr;gap:40px;
+    }
+    .toc{
+      position:sticky;top:88px;align-self:start;padding:18px;
+      border:1px solid var(--line);border-radius:16px;background:rgba(13,18,32,.7);
+    }
+    .toc strong{display:block;margin-bottom:10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#748099}
+    .toc a{display:block;padding:7px 0;color:#aeb9cc;font-size:14px}
+    .content section{
+      padding:28px 0;border-bottom:1px solid var(--line);
+      scroll-margin-top:90px;
+    }
+    .content section:first-child{padding-top:0}
+    h2{font-size:26px;margin:0 0 12px;letter-spacing:-.6px}
+    h3{font-size:18px;margin:22px 0 8px}
+    p,li{color:#b6c0d2}
+    ul{padding-left:22px}
+    .callout{
+      margin:20px 0;padding:17px 18px;border-radius:14px;
+      border:1px solid rgba(59,130,246,.22);
+      background:rgba(37,99,235,.07);
+    }
+    .footer{
+      border-top:1px solid var(--line);padding:35px 22px;
+      color:#748099;text-align:center;font-size:13px;
+    }
+    .footer strong{color:#aeb9cc}
+    @media(max-width:760px){
+      .nav-links{display:none}
+      .layout{grid-template-columns:1fr}
+      .toc{position:relative;top:auto}
+      h1{letter-spacing:-2px}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-icon">C</span>
+        <span>Core</span>
+      </a>
+      <div class="nav-links">
+        <a href="#acceptance">Terms</a>
+        <a href="#usage">Usage</a>
+        <a href="#data">Data</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <span class="eyebrow">CORE • DISCORD MODERATION</span>
+    <h1>Terms of Service</h1>
+    <p>
+      These Terms of Service explain the rules that apply when you invite, configure,
+      or use Core, a Discord moderation and anti-nuke bot.
+    </p>
+    <div class="updated">Last updated: September 16, 2026</div>
+  </header>
+
+  <main class="layout">
+    <aside class="toc">
+      <strong>Contents</strong>
+      <a href="#acceptance">1. Acceptance</a>
+      <a href="#service">2. The Service</a>
+      <a href="#usage">3. Acceptable Use</a>
+      <a href="#permissions">4. Permissions</a>
+      <a href="#moderation">5. Moderation Features</a>
+      <a href="#data">6. Data & Privacy</a>
+      <a href="#availability">7. Availability</a>
+      <a href="#termination">8. Termination</a>
+      <a href="#liability">9. Liability</a>
+      <a href="#changes">10. Changes</a>
+      <a href="#contact">11. Contact</a>
+    </aside>
+
+    <article class="content">
+      <section id="acceptance">
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By adding Core to a Discord server, configuring Core, or using any Core
+          command or feature, you agree to these Terms of Service. If you do not
+          agree with these terms, do not use Core and remove it from your server.
+        </p>
+        <div class="callout">
+          Core is an independent third-party Discord application and is not operated
+          by, sponsored by, or endorsed by Discord Inc.
+        </div>
+      </section>
+
+      <section id="service">
+        <h2>2. The Service</h2>
+        <p>
+          Core provides Discord server-management and security features that may
+          include moderation commands, logging, automod functionality, permission
+          monitoring, anti-nuke protections, raid protection, configurable alerts,
+          and related tools.
+        </p>
+        <p>
+          Features may be added, removed, modified, or discontinued at any time.
+          Some features may require specific Discord permissions or configuration.
+        </p>
+      </section>
+
+      <section id="usage">
+        <h2>3. Acceptable Use</h2>
+        <p>You agree to use Core only for lawful and legitimate purposes.</p>
+        <ul>
+          <li>Do not use Core to facilitate harassment, threats, fraud, or illegal activity.</li>
+          <li>Do not intentionally abuse, overload, exploit, or attempt to disrupt Core.</li>
+          <li>Do not attempt to reverse engineer or compromise Core or its infrastructure.</li>
+          <li>Do not use Core to bypass Discord restrictions or enforcement systems.</li>
+          <li>Do not use Core in a way that violates Discord's Terms, Community Guidelines, Developer Terms, or Developer Policy.</li>
+        </ul>
+      </section>
+
+      <section id="permissions">
+        <h2>4. Discord Permissions</h2>
+        <p>
+          Core can only perform actions that Discord and the server's configuration
+          allow it to perform. Server administrators are responsible for reviewing
+          the permissions granted to Core and configuring the bot appropriately.
+        </p>
+        <p>
+          Certain security features may require elevated permissions. Grant only
+          the permissions necessary for the features you choose to use.
+        </p>
+      </section>
+
+      <section id="moderation">
+        <h2>5. Moderation & Anti-Nuke Features</h2>
+        <p>
+          Core's moderation and anti-nuke systems are automated tools. They may
+          detect events such as unusual permission changes, mass deletions,
+          unauthorized role changes, channel destruction, or other configured
+          security events.
+        </p>
+        <p>
+          Automated systems can make mistakes or fail to detect an event. Server
+          owners and administrators remain responsible for reviewing configurations,
+          logs, punishments, and security decisions.
+        </p>
+      </section>
+
+      <section id="data">
+        <h2>6. Data & Privacy</h2>
+        <p>
+          Core may process information made available through Discord and information
+          required to provide its features. Depending on your configuration, this
+          may include server IDs, channel IDs, role IDs, user IDs, moderation events,
+          configuration settings, and command-related information.
+        </p>
+        <p>
+          Core should only retain information for legitimate operational purposes
+          and for as long as reasonably necessary. Your actual data practices should
+          be described in a separate Privacy Policy.
+        </p>
+        <div class="callout">
+          <strong>Important:</strong> Replace this section with your exact data
+          collection, storage, retention, deletion, and sharing practices before
+          publishing this page.
+        </div>
+      </section>
+
+      <section id="availability">
+        <h2>7. Availability</h2>
+        <p>
+          Core is provided on an availability basis and may occasionally be
+          unavailable because of maintenance, Discord outages, hosting issues,
+          software errors, rate limits, or other circumstances outside our control.
+        </p>
+        <p>
+          We do not guarantee uninterrupted operation or that every moderation or
+          anti-nuke event will be detected or prevented.
+        </p>
+      </section>
+
+      <section id="termination">
+        <h2>8. Termination</h2>
+        <p>
+          We may restrict, suspend, or discontinue access to Core if necessary,
+          including when a user or server abuses the service, violates these terms,
+          or creates a security or operational risk.
+        </p>
+        <p>
+          You may stop using Core at any time by removing the bot from your server
+          and discontinuing use of its services.
+        </p>
+      </section>
+
+      <section id="liability">
+        <h2>9. Disclaimer & Liability</h2>
+        <p>
+          Core is a security and moderation tool, not a guarantee against raids,
+          nukes, abuse, spam, account compromise, or other security incidents.
+        </p>
+        <p>
+          To the maximum extent permitted by applicable law, Core and its operators
+          are not responsible for losses, damages, deleted content, moderation
+          mistakes, missed detections, Discord outages, or actions taken by server
+          administrators based on Core's output.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>10. Changes to These Terms</h2>
+        <p>
+          These Terms may be updated as Core develops. When material changes are
+          made, the date at the top of this page will be updated. Continued use of
+          Core after an update constitutes acceptance of the revised terms, to the
+          extent permitted by applicable law.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>11. Contact</h2>
+        <p>
+          Questions about these Terms can be directed to the Core support team.
+        </p>
+        <p>
+          <strong>Support:</strong> <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <strong>Core</strong> — Discord Moderation & Security<br>
+    Independent third-party Discord application.
+  </footer>
+</body>
+</html>
